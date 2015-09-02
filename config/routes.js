@@ -26,12 +26,20 @@ module.exports.routes =
     
     'post /person': 'PersonController.create',
     
+    // CONTACT INFO
     '/contactInfo': { response: 'notFound' },
+    // create on/add to person by name
+    'post /person/:personId/contact': 'ContactInfoController.create',
     'post /person/:personId/info': 'ContactInfoController.create',
+    // update
+    'patch /person/:personId/contact/:id': 'ContactInfoController.update',
     'patch /person/:personId/info/:id': 'ContactInfoController.update',
+    // update shorter route
+    'patch /contact/:id': 'ContactInfoController.update',
+    'patch /info/:id': 'ContactInfoController.update',
     
-    // '/category/:name': 'CategoryController.show',   // TODO
-    'post /person/:personId/category': 'CategoryController.create',
-    // 'post /person/:personId/category/:name': 'CategoryController.create',
-    'put /person/:personId/category/:categoryId': 'CategoryController.addPerson'   // TODO
+    // CATEGORY
+    // '/category/:name': 'CategoryController.show',   // TODO?
+    'post /person/:personId/category': 'CategoryController.createOnPerson',
+    'put /person/:personId/category/:categoryId': 'CategoryController.addPerson'
 };

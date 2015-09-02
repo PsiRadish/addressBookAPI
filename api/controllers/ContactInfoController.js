@@ -11,6 +11,9 @@ module.exports =
     {
         Person.findOne(req.params.personId).populate('info').then(function(person)
         {
+            if (typeof person == 'undefined')
+                res.notFound("Person with id " + req.params.personId + " not found");
+            
             ContactInfo.create(req.body).then(function(info)
             {
                 // res.send(person);
