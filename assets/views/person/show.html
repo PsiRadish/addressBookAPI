@@ -1,0 +1,54 @@
+<!-- <div>
+  <h2 class="center-text">{{person.firstName + ' ' + person.lastName}} <a class="pull-right" href="/person/new">New Person</a></h2>
+</div> -->
+<div class="row">
+
+  <article class="panel panel-default col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-3">
+    <div class="panel-heading">
+      <h4>
+        <span>{{person.firstName}}</span>
+        <span ng-if="person.lastName && person.lastName.length"> {{person.lastName}}</span>
+        <a ng-click="deletePerson(person)" class="btn btn-danger btn-xs pull-right glyphicon glyphicon-trash" title="Delete"></a>
+        <a ng-click="editPerson(person)" class="btn btn-default btn-xs pull-right glyphicon glyphicon-pencil" title="Edit"></a>
+      </h4>
+    </div>
+    <label><h5>Categories:</h5></label> {{ person.categories.join(', ') }}
+    
+    <label><h5>Contact Info:</h5></label>
+    <div ng-repeat="contact in person.info" class="panel panel-info">
+      <div class="panel-heading">
+        <h6 class="panel-title">{{contact.name}}</h6>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-7"><label class="pull-right">E-mail:</label></div>
+          <div class="col-xs-9">{{ info.email }}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7"><label class="pull-right">Street Address:</label></div>
+          <div class="col-xs-9">{{ info.address }}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7"><label class="pull-right">City:</label></div>
+          <div class="col-xs-9">{{ info.city }}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7"><label class="pull-right">State:</label></div>
+          <div class="col-xs-9">{{ info.state }}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7"><label class="pull-right">Zip:</label></div>
+          <div class="col-xs-9">{{ info.zip }}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7"><label class="pull-right">Phone:</label></div>
+          <div class="col-xs-9">{{ info.phone }}</div>
+        </div>
+      </div>
+    </div>
+    
+    <label><h5>Notes:</h5></label> 
+    <p>{{person.notes}}</p>
+  </article>
+
+</div>

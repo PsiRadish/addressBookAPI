@@ -1,0 +1,42 @@
+
+nav
+{
+    text-align: center;
+}
+
+nav label + label
+{
+    margin-left: 20px;
+}
+
+nav h3
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2
+{
+    text-align: center;
+}
+
+h1, h2, h3, .h1, .h2, .h3
+{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+h4, h5, h6, .h4, .h5, .h6
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+hr
+{
+    margin: 8px, 0;
+}
+
+.no-margin
+{
+    margin: 0 !important;
+}

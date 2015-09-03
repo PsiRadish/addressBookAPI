@@ -1,0 +1,29 @@
+<form ng-submit="createPerson()" role="form" name="newPersonForm" novalidate>
+  <legend><h2>New Person</h2></legend>
+  
+  <fieldset class="form-group">
+    <label for="person-first-name-box">First Name</label>
+    
+    <input required ng-minlength="5" ng-model="newPerson.firstName" name="firstName" type="text" class="form-control" ng-class="{ 'has-error': newPersonForm.firstName.$touched && newPersonForm.firstName.$invalid }" id="person-first-name-box" placeholder="Enter first name">
+    <div ng-if="newPersonForm.firstName.$touched && newPersonForm.firstName.$invalid" ng-messages="newPersonForm.firstName.$error" class="help-block">
+      <p ng-message="required">This field is required.</p>
+    </div>
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <label for="person-last-name-box">Last Name</label>
+    <input ng-model="newPerson.lastName" name="lastName" type="text" class="form-control" id="person-last-name-box" placeholder="Enter last name">
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <label for="person-notes-box">Notes</label>
+    
+    <textarea ng-model="newPerson.notes" name="notes" class="form-control" id="person-notes-box" placeholder="Enter person notes text"></textarea>
+    <!-- <div ng-if="newPersonForm.notes.$touched && newPersonForm.notes.$invalid" ng-messages="newPersonForm.notes.$error" class="help-message">
+      <p ng-message="required">This field is required.</p>
+      <p ng-message="minlength">This field must be at least 10 characters in length.</p>
+    </div> -->
+  </fieldset>
+  
+  <button ng-disabled="newPersonForm.$invalid" type="submit" class="btn btn-primary">Submit</button>
+</form>

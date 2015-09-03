@@ -1,0 +1,22 @@
+
+<div class="center-text"><h2 class="center-text">People <a class="pull-right btn btn-success glyphicon glyphicon-plus" href="/person/new"></a></h2></div>
+
+<div ng-repeat="person in persons track by person.id" class="row">
+
+  <article class="panel panel-default col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-3">
+    <div class="panel-heading">
+      <h4>
+        <a href="/person/{{person.id}}">
+          <span>{{person.firstName}}</span>
+          <span ng-if="person.lastName && person.lastName.length">{{person.lastName}}</span>
+        </a>
+        <a ng-click="deletePerson(person)" class="btn btn-danger btn-xs pull-right glyphicon glyphicon-trash" title="Delete"></a>
+        <a ng-click="editPerson(person)" class="btn btn-default btn-xs pull-right glyphicon glyphicon-pencil" title="Edit"></a>
+      </h4>
+    </div>
+    <label><h5>Categories:</h5></label> {{ person.categories.join(', ') }}
+    <label><h5>Notes:</h5></label> 
+    <p>{{person.notes}}</p>
+  </article>
+
+</div>

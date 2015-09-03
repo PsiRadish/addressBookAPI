@@ -22,24 +22,36 @@
 
 module.exports.routes = 
 {
-    '/': 'HelpController.help',
+    '/': 'PagesController.index',
     
-    'post /person': 'PersonController.create',
+    // PERSON
+    'get /api/person': 'PersonController.index',
+    'get /api/person/:id': 'PersonController.show',
+    'post /api/person': 'PersonController.create',
     
     // CONTACT INFO
-    '/contactInfo': { response: 'notFound' },
+    '/api/contactInfo': { response: 'notFound' },
     // create on/add to person by name
-    'post /person/:personId/contact': 'ContactInfoController.create',
-    'post /person/:personId/info': 'ContactInfoController.create',
+    'post /api/person/:personId/contact': 'ContactInfoController.create',
+    'post /api/person/:personId/info': 'ContactInfoController.create',
     // update
-    'patch /person/:personId/contact/:id': 'ContactInfoController.update',
-    'patch /person/:personId/info/:id': 'ContactInfoController.update',
+    'patch /api/person/:personId/contact/:id': 'ContactInfoController.update',
+    'patch /api/person/:personId/info/:id': 'ContactInfoController.update',
     // update shorter route
-    'patch /contact/:id': 'ContactInfoController.update',
-    'patch /info/:id': 'ContactInfoController.update',
+    'patch /api/contact/:id': 'ContactInfoController.update',
+    'patch /api/info/:id': 'ContactInfoController.update',
     
     // CATEGORY
-    // '/category/:name': 'CategoryController.show',   // TODO?
-    'post /person/:personId/category': 'CategoryController.createOnPerson',
-    'put /person/:personId/category/:categoryId': 'CategoryController.addPerson'
+    // 'get /api/category/:id': 'CategoryController.show',  // TODO
+    // '/api/category/:name': 'CategoryController.showByName',   // TODO?
+    'post /api/person/:personId/category': 'CategoryController.createOnPerson',
+    'put /api/person/:personId/category/:categoryId': 'CategoryController.addPerson',
+    
+    "get *":
+    {
+        controller: "PagesController",
+        action: "index",
+        skipAssets: true,
+        skipRegex: /^\/api\/.*$/
+    }
 };
