@@ -35,7 +35,7 @@
 
     var DEFAULT_ACTIONS = {
       'get': {method: 'GET'},
-      'save': {method: 'PERSON'},
+      'save': {method: 'POST'},
       'query': {method: 'GET', isArray: true},
       'remove': {method: 'DELETE'},
       'delete': {method: 'DELETE'}
@@ -207,7 +207,7 @@
 
           instanceParams = mergeParams(params, actionParams);
 
-          if (action.method == 'PERSON' || action.method == 'PUT') { // Update individual instance of model
+          if (action.method == 'POST' || action.method == 'PUT') { // Update individual instance of model
             return createOrUpdateResource(item, instanceParams, action, success, error);
           }
           else if (action.method == 'DELETE') { // Delete individual instance of model
@@ -314,7 +314,7 @@
         return item.$promise;
       }
 
-      // Request handler function for PUTs and PERSONs
+      // Request handler function for PUTs and POSTs
       function createOrUpdateResource(item, params, action, success, error) {
         var deferred = attachPromise(item, success, error);
 
@@ -330,8 +330,8 @@
 
         var url = buildUrl(model, data[options.primaryKey], action, params, options);
 
-        // when Resource has id use PUT, otherwise use PERSON
-        var method = item[options.primaryKey] ? 'put' : 'person';
+        // when Resource has id use PUT, otherwise use POST
+        var method = item[options.primaryKey] ? 'put' : 'post';
 
         if (options.verbose) {
           $log.info('sailsResource calling ' + method.toUpperCase() + ' ' + url);
@@ -448,7 +448,7 @@
           return handleRequest(isObject(this) ? this : null, params, action, success, error);
         }
 
-        if (/^(PERSON|PUT|PATCH|DELETE)$/i.test(action.method)) {
+        if (/^(POST|PUT|PATCH|DELETE)$/i.test(action.method)) {
           // Add to instance methods to prototype with $ prefix, GET methods not included
           Resource.prototype['$' + name] = actionMethod;
         }
