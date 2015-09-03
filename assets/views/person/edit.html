@@ -1,0 +1,29 @@
+<form ng-submit="commitEdits()" role="form" name="editPersonForm" novalidate class="col-md-12 col-md-offset-6 col-sm-14 col-sm-offset-5">
+  <legend><h2>Edit Person</h2></legend>
+  
+  <fieldset class="form-group" ng-class="{ 'has-error': editPersonForm.firstName.$touched && editPersonForm.firstName.$invalid }">
+    <label for="person-first-name-box"><h5>First Name</h5></label>
+    
+    <input required ng-model="editedPerson.firstName" name="firstName" type="text" class="form-control" id="person-first-name-box" placeholder="Enter first name">
+    <div ng-if="editPersonForm.firstName.$touched && editPersonForm.firstName.$invalid" ng-messages="editPersonForm.firstName.$error" class="help-block">
+      <p ng-message="required">This field is required.</p>
+    </div>
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <label for="person-last-name-box"><h5>Last Name</h5></label>
+    <input ng-model="editedPerson.lastName" name="lastName" type="text" class="form-control" id="person-last-name-box" placeholder="Enter last name">
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <label for="person-notes-box"><h5>Notes</h5></label>
+    
+    <textarea ng-model="editedPerson.notes" name="notes" class="form-control" id="person-notes-box" placeholder="Enter person notes text"></textarea>
+    <!-- <div ng-if="editPersonForm.notes.$touched && editPersonForm.notes.$invalid" ng-messages="editPersonForm.notes.$error" class="help-message">
+      <p ng-message="required">This field is required.</p>
+      <p ng-message="minlength">This field must be at least 10 characters in length.</p>
+    </div> -->
+  </fieldset>
+  
+  <button ng-disabled="editPersonForm.$invalid" type="submit" class="btn" ng-class="{'btn-primary': !editPersonForm.$invalid, 'btn-danger': editPersonForm.$invalid}">Submit</button>
+</form>

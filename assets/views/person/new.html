@@ -25,5 +25,5 @@
     </div> -->
   </fieldset>
   
-  <button ng-disabled="newPersonForm.$invalid" type="submit" class="btn btn-primary">Submit</button>
+  <button ng-disabled="newPersonForm.$invalid" type="submit" class="btn" ng-class="{'btn-primary': !newPersonForm.$invalid, 'btn-danger': newPersonForm.$invalid}">Submit</button>
 </form>

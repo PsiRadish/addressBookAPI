@@ -11,7 +11,7 @@
           <span ng-if="person.lastName && person.lastName.length">{{person.lastName}}</span>
         </a>
         <a ng-click="deletePerson(person)" class="btn btn-danger btn-xs pull-right glyphicon glyphicon-trash" title="Delete"></a>
-        <a ng-click="editPerson(person)" class="btn btn-default btn-xs pull-right glyphicon glyphicon-pencil" title="Edit"></a>
+        <a href="/person/{{person.id}}/edit" class="btn btn-default btn-xs pull-right glyphicon glyphicon-pencil" title="Edit"></a>
       </h4>
     </div>
     <div class="panel-body">

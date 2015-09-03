@@ -37,6 +37,11 @@ addressApp.config(['$routeProvider', '$locationProvider', 'sailsResourceProvider
         templateUrl: 'views/person/new.html',
         controller: 'PersonNewCtrl'
     })
+    .when('/person/:id/edit',
+    {
+        templateUrl: 'views/person/edit.html',
+        controller: 'PersonEditCtrl'
+    })
     .when('/person/:id',
     {
         templateUrl: 'views/person/show.html',
