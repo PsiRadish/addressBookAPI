@@ -96,13 +96,13 @@ module.exports =
         {
             type: 'string',
             defaultsTo: null,
-            is: /\d{5}(-\d{4})?|^$/
+            regex: /\d{5}(-\d{4})?|^$/
         },
         phone:
         {
             type: 'string',
             defaultsTo: '',
-            is: /(1-?)?\(?\d{3}\)?( |-)?\d{3}-?\d{4}/
+            regex: /(1-?)?\(?\d{3}\)?( |-)?\d{3}-?\d{4}/
         },
         
         // ASSOCIATIONS

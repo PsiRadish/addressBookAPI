@@ -30,7 +30,7 @@ module.exports.routes =
     'post /api/person': 'PersonController.create',
     
     // CONTACT INFO
-    '/api/contactInfo': { response: 'notFound' },
+    // '/api/contactInfo': { response: 'notFound' },
     // create on/add to person by name
     'post /api/person/:personId/contact': 'ContactInfoController.create',
     'post /api/person/:personId/info': 'ContactInfoController.create',

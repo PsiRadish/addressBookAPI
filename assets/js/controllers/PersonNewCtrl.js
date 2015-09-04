@@ -21,8 +21,6 @@ addressApp.controller('PersonNewCtrl', ['$scope', '$log', '$location', 'Person',
         }).catch(function(err)
         {
             $log.error('Twas an error\n', err);
-            
-            alert("Dog.query()");
         });
     }
 }]);

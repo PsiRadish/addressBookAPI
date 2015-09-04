@@ -19,6 +19,8 @@ addressApp.controller('PersonEditCtrl', ['$scope', '$routeParams', '$location', 
         {
             console.log('Person saved', savedPerson);
             
+            $scope.editing = false;
+            
             $location.path('/person/'+savedPerson.id); // redirect
         }).catch(function(err)
         {

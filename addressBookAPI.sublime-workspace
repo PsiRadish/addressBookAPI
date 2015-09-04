@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
 				"cont",
 				"controller	AngularJS"
 			],
@@ -244,10 +248,106 @@
 	"buffers":
 	[
 		{
+			"file": "assets/js/app.js",
+			"settings":
+			{
+				"buffer_size": 1252,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/views/person/edit.html",
+			"settings":
+			{
+				"buffer_size": 1815,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/controllers/PersonEditCtrl.js",
+			"settings":
+			{
+				"buffer_size": 782,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/controllers/PersonNewCtrl.js",
+			"settings":
+			{
+				"buffer_size": 705,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/views/person/new.html",
+			"settings":
+			{
+				"buffer_size": 1794,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/views/person/show.html",
+			"settings":
+			{
+				"buffer_size": 2379,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/views/home.html",
+			"settings":
+			{
+				"buffer_size": 1059,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/controllers/HomeCtrl.js",
+			"settings":
+			{
+				"buffer_size": 707,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/controllers/PersonShowCtrl.js",
+			"settings":
+			{
+				"buffer_size": 754,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/views/about.html",
+			"settings":
+			{
+				"buffer_size": 79,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/layout.ejs",
+			"settings":
+			{
+				"buffer_size": 4683,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/index.ejs",
+			"settings":
+			{
+				"buffer_size": 620,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "config/routes.js",
 			"settings":
 			{
-				"buffer_size": 1942,
+				"buffer_size": 2203,
 				"line_ending": "Unix"
 			}
 		}
@@ -259,7 +359,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 151.0,
+		"height": 230.0,
 		"last_filter": "install",
 		"selected_items":
 		[
@@ -350,10 +450,60 @@
 	"expanded_folders":
 	[
 		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI",
-		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config"
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/controllers",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/models",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/policies",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/js/controllers",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/js/resources",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/styles",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/views",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/views/person",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/api",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/api/controllers",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/js/controllers",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/views",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/views/post",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/config",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/tasks",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/views"
 	],
 	"file_history":
 	[
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/js/controllers/PostEditModalCtrl.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/js/controllers/HomeCtrl.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/controllers/CategoryController.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/controllers/PersonController.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config/local.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/js/controllers/PostShowCtrl.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/js/controllers/AboutCtrl.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/styles/zzzzzz_app.css",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/styles/bootstrap.css",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/.tmp/public/js/dependencies/sailsResource.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/js/dependencies/sailsResource.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/js/resources/PersonResource.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/tasks/pipeline.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/node_modules/sails/node_modules/sails-generate/node_modules/sails-generate-frontend/templates/tasks/config/sails-linker.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/tasks/config/sails-linker.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config/routes.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/.tmp/public/styles/importer.css",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/js/dependencies/sails.io.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/views/layout.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/config/routes.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/models/Person.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/js/resources/PostResource.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/views/home.html",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/views/person/about.html",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/controllers/PagesController.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/tasks/pipeline.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/views/person/new.html",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config/blueprints.js",
 		"/C/Users/Radish/Dev/Compass/bootswatch/paper/variables.less",
 		"/C/Users/Radish/Dev/Compass/bootswatch/paper/_bootswatch.scss",
 		"/C/Users/Radish/Dev/Compass/bootswatch/paper/_variables.scss",
@@ -375,14 +525,12 @@
 		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/tasks/pipeline.js",
 		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/views/homepage.ejs",
 		"/C/Users/Radish/Dev/GA_WDI/bloggy3/package.json",
-		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config/blueprints.js",
 		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config/bootstrap.js",
 		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/controllers/HelpController.js",
 		"/C/Users/Radish/Dev/GA_WDI/peazza/app/helpers/events_helper.rb",
 		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config/models.js",
 		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config/connections.js",
 		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/api/responses/badRequest.js",
-		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/config/local.js",
 		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/RegReplace/reg_replace.sublime-settings",
 		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/User/Main.sublime-menu",
 		"/C/Users/Radish/Dev/GA_WDI/WDI_SEA_03_NOTES/week_10_more_angular_sails/day_01_mongo_sails_intro/examples/dogpound/api/models/Cage.js",
@@ -455,33 +603,7 @@
 		"/M/Radish/Dev/GA_WDI/Bequarked/js/jquery.fittext.js",
 		"/C/Users/Radish/AppData8/Roaming/Sublime Text 3/Packages/User/bh_core.sublime-settings",
 		"/M/Radish/Dev/GA_WDI/Bequarked/js/script.js",
-		"/C/Users/Radish/Dev/GA_WDI/Bequarked/js/css.js",
-		"/C/Users/Radish/Dev/GA_WDI/Bequarked/js/jquery.fittext.RAD.js",
-		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Radish/Dev/GA_WDI/Bequarked/js/constants.js",
-		"/C/Users/Radish/Dev/GA_WDI/Bequarked/script/grid.js",
-		"/C/Users/Radish/Dev/GA_WDI/Bequarked/grid.js",
-		"/C/Users/Radish/Dev/GA_WDI/Begrav'd/grid.js",
-		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/JavaScript/for-()-{}-(faster).sublime-snippet",
-		"/C/Users/Radish/Dev/GA_WDI/WDI_SEA_03_HOMEWORK/PsiRadish/Week02/hw_reddit_ajax_slideshow/js/script.js",
-		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/JavaScript/for-()-{}.sublime-snippet",
-		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/User/for-()-{}.sublime-snippet",
-		"//Booboo/Dev/GA_WDI/in-class/Week02/API/index.html",
-		"//Booboo/Dev/GA_WDI/in-class/Week02/API/script.js",
-		"//Booboo/Dev/GA_WDI/in-class/Week02/API/style.css",
-		"//Booboo/Dev/GA_WDI/in-class/Week02/jquery-ui/index.html",
-		"//Booboo/Dev/GA_WDI/in-class/Week02/jquery-ui/script.js",
-		"//Booboo/Dev/GA_WDI/in-class/Week02/jquery-ui/style.css",
-		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Radish/Dev/GA_WDI/in-class/Week02/jquery-ui/style.css",
-		"/C/Users/Radish/Dev/GA_WDI/in-class/Week02/jquery-ui/index.html",
-		"/C/Users/Radish/Dev/GA_WDI/in-class/Week02/jquery-ui/script.js",
-		"/home/radish/Dev/GA_WDI/WDI_SEA_03_HOMEWORK/PsiRadish/Week02/hw_jquery_todo/index.html",
-		"/home/radish/Dev/GA_WDI/WDI_SEA_03_HOMEWORK/PsiRadish/Week02/hw_jquery_todo/script.js",
-		"/home/radish/Dev/GA_WDI/WDI_SEA_03_HOMEWORK/PsiRadish/Week02/hw_jquery_todo/style.css",
-		"/home/radish/Dev/GA_WDI/WDI_SEA_03_HOMEWORK/PsiRadish/Week02/hw_jquery_todo/truthcheck.html"
+		"/C/Users/Radish/Dev/GA_WDI/Bequarked/js/css.js"
 	],
 	"find":
 	{
@@ -499,6 +621,37 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"editPersonForm",
+			".person",
+			"person",
+			"newPerson",
+			"newPersonForm",
+			"url('../",
+			"</label>",
+			"<label>",
+			"h3",
+			"h6",
+			"h1,",
+			"css",
+			"h2",
+			"h1",
+			"navbar",
+			"persons",
+			"h2",
+			"url('../",
+			"\"col-xs-9\"></div>",
+			"h1",
+			"hre",
+			"hr",
+			"h3",
+			"inline-block",
+			"post",
+			"-firstName",
+			"title",
+			"widget",
+			"body",
+			"bloggyApp",
+			"(?<! ) /(?!api)",
 			"margin",
 			"grid-gutter-width",
 			"gutter-width",
@@ -595,45 +748,25 @@
 			"makeHexKey",
 			"exKey",
 			"SELECTORS",
-			"ring- ",
-			"my-turn-no",
-			"my-turn-yes",
-			"gravDir",
-			"Red",
-			"\"ctrl\\+shift\\+[yz]\"",
-			"\"ctrl+alt+y\"",
-			"\"ctrl\\+[^k]\", ",
-			"\"ctrl\\+\\w\", ",
-			"\"ctrl+k\", ",
-			"\"ctrl\\+\\w\", ",
-			"\\b([xy])Coord\\b",
-			"block",
-			"indent",
-			"ctrl+shift+d",
-			"; ",
-			" {",
-			"span",
-			"This is an awesome product one description.",
-			"outputImage",
-			"sonyItems",
-			"author",
-			", '\\n'",
-			"`",
-			"\n",
-			">.+",
-			"score",
-			"thisLetter",
-			"num",
-			"argv[2]",
-			"reverseMe",
-			"\\balert\\b"
+			"ring- "
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			".editedPerson",
+			"url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/",
+			"url('//netdna.bootstrapcdn.com/bootstrap/3.3.5/",
+			"\"col-xs-9\">{{ info. }}</div>",
+			"\"col-xs-9\">{{}}</div>",
+			"person",
+			"-first-name",
+			"firstName",
+			"notes",
+			"addressApp",
+			" /api/",
 			"\\1",
 			"''",
 			"\\1:",
@@ -705,24 +838,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config/routes.js",
+					"file": "assets/js/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1942,
+						"buffer_size": 1252,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								950,
-								946
+								1036,
+								1036
 							]
 						],
 						"settings":
@@ -791,7 +924,1074 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/views/person/edit.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								397
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/js/controllers/PersonEditCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/js/controllers/PersonNewCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								477,
+								532
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/views/person/new.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1794,
+								1794
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/views/person/show.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								724,
+								724
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/views/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1059,
+								1059
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/js/controllers/HomeCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "assets/js/controllers/PersonShowCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "assets/views/about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 79,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 10,
+					"file": "views/layout.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2083,
+								2083
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/Node.js/HTML (EJS).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "views/index.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/Node.js/HTML (EJS).tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "config/routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2203,
+								2203
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -817,6 +2017,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -827,6 +2033,7 @@
 		"rows":
 		[
 			0.0,
+			0.493156975433,
 			1.0
 		]
 	},
@@ -869,7 +2076,7 @@
 		],
 		"width": 1296.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

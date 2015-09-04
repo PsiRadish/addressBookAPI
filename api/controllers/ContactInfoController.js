@@ -12,28 +12,33 @@ module.exports =
         Person.findOne(req.params.personId).populate('info').then(function(person)
         {
             if (typeof person == 'undefined')
+            {
                 res.notFound("Person with id " + req.params.personId + " not found");
-            
-            ContactInfo.create(req.body).then(function(info)
+                console.log("Person with id", req.params.personId, "not found");
+            }
+            else
             {
-                // res.send(person);
-                person.info.add(info);
-                person.save(function(err, personer)
+                ContactInfo.create(req.body).then(function(info)
                 {
-                    if (!err)
+                    // res.send(person);
+                    person.info.add(info);
+                    person.save(function(err, personer)
                     {
-                        console.log(personer.name, "got a new info.");
-                        res.send(info);
-                    }
-                    else
-                    {
-                        res.send(err);
-                    }
+                        if (!err)
+                        {
+                            console.log(personer.firstName, personer.lastName, "got a new info.");
+                            res.send(info);
+                        }
+                        else
+                        {
+                            res.send(err);
+                        }
+                    });
+                }).catch(function(err)
+                {
+                    res.send(err);
                 });
-            }).catch(function(err)
-            {
-                res.send(err);
-            });
+            }
         }).catch(function(err)
         {
             res.send(err);

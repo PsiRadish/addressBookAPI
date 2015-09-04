@@ -4,10 +4,10 @@ nav
     text-align: center;
 }
 
-nav label + label
+/*nav label + label
 {
     margin-left: 20px;
-}
+}*/
 
 /*nav h3
 {
@@ -33,27 +33,27 @@ h4, h5, h6, .h4, .h5, .h6
 
 h1, .h1 
 {
-  font-size: 44px;
+    font-size: 44px;
 }
 h2, .h2
 {
-  font-size: 38px;
+    font-size: 38px;
 }
 h3, .h3 
 {
-  font-size: 32px;
+    font-size: 32px;
 }
 h4, .h4 
 {
-  font-size: 26px;
+    font-size: 26px;
 }
 h5, .h5 
 {
-  font-size: 20px;
+    font-size: 20px;
 }
 h6, .h6 
 {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .panel
@@ -67,6 +67,11 @@ h6, .h6
 .panel-body
 {
     padding: 10px;
+}
+
+legend
+{
+    margin-bottom: 8px;
 }
 
 hr
@@ -91,3 +96,77 @@ button[type="submit"]
 {
     text-align: center !important;
 }
+
+label
+{
+    font-weight: bold;
+}
+label h4
+{
+    line-height: 24px;
+}
+
+.form-control
+{
+    height: initial;
+}
+
+fieldset .col-xs-7 label, fieldset p, fieldset span
+{
+    font-size: 16px;
+}
+
+#new-info-form *
+{
+    font-size: 13px;
+}
+
+ul.nav-tabs > li.active > a
+{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0, 0.3);
+}
+
+ul.nav-tabs > li.active
+{
+    border-bottom: 4px solid white;
+    margin-bottom: -4px;
+}
+
+.shadow-cover
+{
+    background-color: white;
+    width: calc(100% + 30px);
+    height: 5px;
+    margin-bottom: -5px;
+    
+    position: relative;
+    right: 15px;
+    top: 10px;
+    
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+.active .shadow-cover
+{
+    opacity: 1;
+}
+
+.tab-content
+{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0, 0.3);
+    padding: 6px;
+}
+
+.tab-pane
+{
+    position: relative;
+}
+
+.info-controls
+{
+    display: inline-block;
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+}
+

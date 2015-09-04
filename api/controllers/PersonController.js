@@ -9,7 +9,7 @@ module.exports =
 {
     index: function(req, res)
     {
-        Person.find().populateAll().then(function(people)
+        Person.find().populate('categories').then(function(people)
         {
             res.send(people);
         }).catch(function(err)

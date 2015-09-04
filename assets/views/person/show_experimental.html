@@ -1,0 +1,92 @@
+<div class="col-md-12 col-md-offset-6 col-sm-14 col-sm-offset-5">
+  <form ng-submit="commitEdits()" role="form" name="editPersonForm" novalidate>
+    <legend><h4>
+      <span>{{person.firstName}}</span> <span ng-if="person.lastName && person.lastName.length"> {{person.lastName}}</span>
+      <a ng-click="deletePerson(person)" class="btn btn-danger btn-xs pull-right glyphicon glyphicon-trash" title="Delete"></a>
+      <a ng-show="!editing" ng-click="editing=true" class="btn btn-default btn-xs pull-right glyphicon glyphicon-pencil" title="Edit"></a>
+      <a ng-show="editing" ng-click="cancelEdit()" class="btn btn-default btn-xs pull-right glyphicon glyphicon-remove" title="Cancel"></a>
+    </h4></legend>
+    
+    <label for="person-first-name-box"><h5>Name</h5></label>
+    
+    <fieldset class="form-group" ng-class="{ 'has-error': editing && editPersonForm.firstName.$touched && editPersonForm.firstName.$invalid }">
+      <div class="row">
+        <div class="col-xs-7">
+          <label for="person-first-name-box">First:</label>
+        </div>
+        <div class="col-xs-17">
+          <span ng-show="!editing">{{person.firstName}}</span>
+          <input ng-show="editing" required ng-model="person.firstName" name="firstName" type="text" class="form-control" id="person-first-name-box" placeholder="Enter first name">
+        </div>
+      </div>
+      <div ng-if="editing && editPersonForm.firstName.$touched && editPersonForm.firstName.$invalid" ng-messages="editPersonForm.firstName.$error" class="help-block">
+        <p ng-message="required">This field is required.</p>
+      </div>
+    </fieldset>
+    
+    <fieldset class="form-group">
+      <div class="row">
+        <div class="col-xs-7">
+          <label for="person-last-name-box">Last:</label>
+       </div>
+        <div class="col-xs-17">
+          <span ng-show="!editing">{{person.lastName}}</span>
+          <input ng-show="editing" ng-model="person.lastName" name="lastName" type="text" class="form-control" id="person-last-name-box" placeholder="Enter last name">
+        </div>
+      </div>
+    </fieldset>
+      
+    <hr>
+    
+    <fieldset class="form-group">
+      <label for="person-notes-box"><h5>Notes</h5></label>
+      
+      <p ng-show="!editing">{{person.notes}}</p>
+      <textarea ng-show="editing" ng-model="person.notes" name="notes" class="form-control" id="person-notes-box" placeholder="Enter person notes text"></textarea>
+      <!-- <div ng-if="editPersonForm.notes.$touched && editPersonForm.notes.$invalid" ng-messages="editPersonForm.notes.$error" class="help-message">
+        <p ng-message="required">This field is required.</p>
+        <p ng-message="minlength">This field must be at least 10 characters in length.</p>
+      </div> -->
+    </fieldset>
+    
+    <hr ng-show="editing">
+    
+    <button ng-show="editing" ng-disabled="editPersonForm.$invalid" type="submit" class="btn" ng-class="{'btn-success': !editPersonForm.$invalid, 'btn-danger': editPersonForm.$invalid}">Submit</button>
+  </form>
+  
+  <hr>
+  
+  <label><h5>Contact Info</h5></label>
+  <div ng-repeat="contact in person.info" class="panel panel-info">
+    <div class="panel-heading">
+      <h6 class="panel-title">{{contact.name}}</h6>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-xs-7"><label class="pull-right">E-mail:</label></div>
+        <div class="col-xs-17">{{ info.email }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-7"><label class="pull-right">Street Address:</label></div>
+        <div class="col-xs-17">{{ info.address }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-7"><label class="pull-right">City:</label></div>
+        <div class="col-xs-17">{{ info.city }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-7"><label class="pull-right">State:</label></div>
+        <div class="col-xs-17">{{ info.state }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-7"><label class="pull-right">Zip:</label></div>
+        <div class="col-xs-17">{{ info.zip }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-7"><label class="pull-right">Phone:</label></div>
+        <div class="col-xs-17">{{ info.phone }}</div>
+      </div>
+    </div>
+  </div>
+
+</div>

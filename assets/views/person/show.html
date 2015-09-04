@@ -13,49 +13,103 @@
       </h3>
     </div>
     <div class="panel-body">
+      <label><h5>Notes:</h5></label> 
+      <p>{{person.notes}}</p>
+      
+      <hr>
+      
       <label><h5>Categories:</h5></label> {{ person.categoryNames.join(', ') }}
       
       <hr>
       
       <label><h5>Contact Info:</h5></label>
-      <div ng-repeat="contact in person.info" class="panel panel-info">
-        <div class="panel-heading">
-          <h6 class="panel-title">{{contact.name}}</h6>
-        </div>
-        <div class="panel-body">
+      <tabset>
+        <tab ng-repeat="contact in person.info" active="contact.active" ng-init="contact.active = $index === 0">
+          <tab-heading>
+            {{contact.name}}
+            <div class="shadow-cover"></div>
+          </tab-heading>
+          
+          <div class="row">
+            <div class="col-xs-7"><label class="pull-right">Name:</label></div>
+            <div class="col-xs-17">{{contact.name}}</div>
+          </div>
           <div class="row">
             <div class="col-xs-7"><label class="pull-right">E-mail:</label></div>
-            <div class="col-xs-9">{{ info.email }}</div>
+            <div class="col-xs-17">{{ contact.email }}</div>
           </div>
           <div class="row">
             <div class="col-xs-7"><label class="pull-right">Street Address:</label></div>
-            <div class="col-xs-9">{{ info.address }}</div>
+            <div class="col-xs-17">{{ contact.address }}</div>
           </div>
           <div class="row">
             <div class="col-xs-7"><label class="pull-right">City:</label></div>
-            <div class="col-xs-9">{{ info.city }}</div>
+            <div class="col-xs-17">{{ contact.city }}</div>
           </div>
           <div class="row">
             <div class="col-xs-7"><label class="pull-right">State:</label></div>
-            <div class="col-xs-9">{{ info.state }}</div>
+            <div class="col-xs-17">{{ contact.state }}</div>
           </div>
           <div class="row">
             <div class="col-xs-7"><label class="pull-right">Zip:</label></div>
-            <div class="col-xs-9">{{ info.zip }}</div>
+            <div class="col-xs-17">{{ contact.zip }}</div>
           </div>
           <div class="row">
             <div class="col-xs-7"><label class="pull-right">Phone:</label></div>
-            <div class="col-xs-9">{{ info.phone }}</div>
+            <div class="col-xs-17">{{ contact.phone }}</div>
           </div>
-        </div>
-      </div>
-      
-      <hr>
-      
-      <label><h5>Notes:</h5></label> 
-      <p>{{person.notes}}</p>
+          
+          <div class="info-controls">
+            <a ng-click="deleteContactInfo(contact)" class="btn btn-danger btn-xs glyphicon glyphicon-trash" title="Delete"></a>
+            <a href="/person/{{person.id}}/info/{{contact.id}}" class="btn btn-default btn-xs glyphicon glyphicon-pencil" title="Edit"></a>
+          </div>
+        </tab>
+        <tab select="clearNew()">
+          <tab-heading>
+            <a href="#" title="New contact info"><i class="glyphicon glyphicon-plus"></i></a>
+            <div class="shadow-cover"></div>
+          </tab-heading>
+          <form id="new-info-form" ng-submit="createContactInfo()" role="form" name="newContactInfoForm" novalidate>
+            <!-- <legend><h4>New Contact Info</h4></legend> -->
+            
+            <fieldset class="form-group row">
+              <div class="col-xs-7"><label class="pull-right">Name:</label></div>
+              <div class="col-xs-17"><input ng-model="newContactInfo.name" name="name" type="text" class="form-control" placeholder="Enter name"></div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <div class="col-xs-7"><label class="pull-right">E-mail:</label></div>
+              <div class="col-xs-17"><input ng-model="newContactInfo.email" name="email" type="text" class="form-control" placeholder="Enter email"></div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <div class="col-xs-7"><label class="pull-right">Street Address:</label></div>
+              <div class="col-xs-17"><input ng-model="newContactInfo.address" name="address" type="text" class="form-control" placeholder="Enter address"></div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <div class="col-xs-7"><label class="pull-right">City:</label></div>
+              <div class="col-xs-17"><input ng-model="newContactInfo.city" name="city" type="text" class="form-control" placeholder="Enter city"></div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <div class="col-xs-7"><label class="pull-right">State:</label></div>
+              <div class="col-xs-17"><input ng-model="newContactInfo.state" name="state" type="text" class="form-control" placeholder="Enter state"></div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <div class="col-xs-7"><label class="pull-right">Zip:</label></div>
+              <div class="col-xs-17"><input ng-model="newContactInfo.zip" name="zip" type="text" class="form-control" placeholder="Enter zip"></div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <div class="col-xs-7"><label class="pull-right">Phone:</label></div>
+              <div class="col-xs-17"><input ng-model="newContactInfo.phone" name="phone" type="text" class="form-control" placeholder="Enter phone"></div>
+            </fieldset>
+            
+            <div class="info-controls">
+              <button type="submit" class="btn btn-success btn-xs glyphicon glyphicon-floppy-disk" title="Create"></button>
+            </div>
+            
+          </form>
+        </tab>
+      </tabset>
     </div>
-      
+    
   </article>
-
+  
 </div>
