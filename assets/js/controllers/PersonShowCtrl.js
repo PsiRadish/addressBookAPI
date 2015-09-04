@@ -20,11 +20,9 @@ addressApp.controller('PersonShowCtrl', ['$scope', '$routeParams', '$location', 
         console.log('Error\n', err);
     });
     
-    // for experimental version of show
-    $scope.cancelEdit = function()
+    // force view to update by reloading $scope.person
+    function forceViewUpdate()
     {
-        $scope.editing = false;
-        
         Person.get({id: $routeParams.id}).then(function(person)
         {
             $scope.person = person;
@@ -34,6 +32,14 @@ addressApp.controller('PersonShowCtrl', ['$scope', '$routeParams', '$location', 
         {
             console.log('Error\n', err);
         });
+    }
+    
+    // for experimental version of show
+    $scope.cancelEdit = function()
+    {
+        $scope.editing = false;
+        
+        forceViewUpdate();
     }
     
     $scope.deletePerson = function(person)
@@ -50,7 +56,7 @@ addressApp.controller('PersonShowCtrl', ['$scope', '$routeParams', '$location', 
             
             $scope.editing = false;
             
-            $location.path('/person/'+savedPerson.id); // redirect
+            // forceViewUpdate();
         }).catch(function(err)
         {
             console.log('Error\n', err);
@@ -88,8 +94,9 @@ addressApp.controller('PersonShowCtrl', ['$scope', '$routeParams', '$location', 
         {
             console.log('New info', resultContactInfo);
             
-            $location.path('/person/'+$routeParams.id); // redirect
+            // $location.path('/person/'+$routeParams.id); // redirect
             
+            forceViewUpdate();
         }).catch(function(err)
         {
             $log.error('Twas an error\n', err);
@@ -101,5 +108,7 @@ addressApp.controller('PersonShowCtrl', ['$scope', '$routeParams', '$location', 
         console.log('deleteContactInfo', info);
         doomedInfo = new ContactInfo(info);
         doomedInfo.$delete();
+        
+        forceViewUpdate();
     }
 }]);

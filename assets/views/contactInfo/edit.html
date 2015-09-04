@@ -1,0 +1,34 @@
+<form ng-submit="commitEdits()" role="form" name="editContactInfoForm" novalidate class="col-md-12 col-md-offset-6 col-sm-14 col-sm-offset-5">
+  <legend><h2>Edit Contact Info</h2></legend>
+  
+  <fieldset class="form-group row">
+    <div class="col-xs-7"><label class="pull-right">Name:</label></div>
+    <div class="col-xs-17"><input ng-model="newContactInfo.name" name="name" type="text" class="form-control" placeholder="Enter name"></div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <div class="col-xs-7"><label class="pull-right">E-mail:</label></div>
+    <div class="col-xs-17"><input ng-model="newContactInfo.email" name="email" type="text" class="form-control" placeholder="Enter email"></div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <div class="col-xs-7"><label class="pull-right">Street Address:</label></div>
+    <div class="col-xs-17"><input ng-model="newContactInfo.address" name="address" type="text" class="form-control" placeholder="Enter address"></div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <div class="col-xs-7"><label class="pull-right">City:</label></div>
+    <div class="col-xs-17"><input ng-model="newContactInfo.city" name="city" type="text" class="form-control" placeholder="Enter city"></div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <div class="col-xs-7"><label class="pull-right">State:</label></div>
+    <div class="col-xs-17"><input ng-model="newContactInfo.state" name="state" type="text" class="form-control" placeholder="Enter state"></div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <div class="col-xs-7"><label class="pull-right">Zip:</label></div>
+    <div class="col-xs-17"><input ng-model="newContactInfo.zip" name="zip" type="text" class="form-control" placeholder="Enter zip"></div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <div class="col-xs-7"><label class="pull-right">Phone:</label></div>
+    <div class="col-xs-17"><input ng-model="newContactInfo.phone" name="phone" type="text" class="form-control" placeholder="Enter phone"></div>
+  </fieldset>
+  
+  <button ng-disabled="editContactInfoForm.$invalid" type="submit" class="btn" ng-class="{'btn-primary': !editContactInfoForm.$invalid, 'btn-danger': editContactInfoForm.$invalid}">Submit</button>
+</form>
