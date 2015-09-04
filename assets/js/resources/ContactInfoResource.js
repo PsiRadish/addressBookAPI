@@ -5,11 +5,12 @@ addressApp.factory('ContactInfo', ['sailsResource', function(sailsResource)
         save:
         {
             method: 'POST',
-            url: '/api/person/:person_id/info'
-        }/*,
-        delete:
+            url: '/api/person/:personId/info'
+        },
+        update:
         {
-            
-        }*/
+            method: 'PUT',
+            url: '/api/info/:id'
+        }
     });
 }]);

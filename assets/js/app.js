@@ -32,22 +32,27 @@ addressApp.config(['$routeProvider', '$locationProvider', 'sailsResourceProvider
         templateUrl: '/views/about.html',
         controller: 'HomeCtrl'
     })
-    .when('/person/new',
+    .when('/person/new',        // new person
     {
         templateUrl: 'views/person/new.html',
         controller: 'PersonNewCtrl'
     })
-    .when('/person/:id/edit',
+    .when('/person/:id/edit',   // edit person
     {
         templateUrl: 'views/person/edit.html',
         controller: 'PersonEditCtrl'
     })
-    .when('/person/:person_id/info/:id',
+    .when('/info/:id/edit',     // edit contact info
     {
         templateUrl: 'views/contactInfo/edit.html',
         controller: 'ContactInfoEditCtrl'
     })
-    .when('/person/:id',
+    .when('/person/:id/info/:infoId',   // show person with specific contact info chosen
+    {
+        templateUrl: 'views/person/show.html',
+        controller: 'PersonShowCtrl'
+    })
+    .when('/person/:id',    // show person with leftmost contact info tab chosen
     {
         templateUrl: 'views/person/show.html',
         controller: 'PersonShowCtrl'

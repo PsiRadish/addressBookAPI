@@ -6,6 +6,12 @@ addressApp.controller('PersonShowCtrl', ['$scope', '$routeParams', '$location', 
     $scope.person = {};
     $scope.editing = false;
     
+    console.log('infoId', $routeParams.infoId);
+    if (typeof $routeParams.infoId == 'undefined')
+        $scope.infoId = null;
+    else
+        $scope.infoId = $routeParams.infoId;
+    
     Person.get({id: $routeParams.id}).then(function(person)
     {
         $scope.person = person;
@@ -90,11 +96,11 @@ addressApp.controller('PersonShowCtrl', ['$scope', '$routeParams', '$location', 
     {
         var newContactInfo = new ContactInfo($scope.newContactInfo);
         
-        newContactInfo.$save({person_id: $routeParams.id}).then(function(resultContactInfo)
+        newContactInfo.$save({personId: $routeParams.id}).then(function(resultContactInfo)
         {
             console.log('New info', resultContactInfo);
             
-            // $location.path('/person/'+$routeParams.id); // redirect
+            $scope.infoId = resultContactInfo.id;
             
             forceViewUpdate();
         }).catch(function(err)

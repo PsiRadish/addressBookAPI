@@ -3,11 +3,13 @@ addressApp.controller('ContactInfoEditCtrl', ['$scope', '$routeParams', '$locati
 {
     $scope.editedContactInfo = {};
     
+    console.log('Stop using old shit, dammit');
+    
     ContactInfo.get({id: $routeParams.id}).then(function(contactInfo)
     {
         $scope.editedContactInfo = contactInfo;
         
-        console.log('ContactInfo prep for edit', contactInfo);
+        console.log('ContactInfo prepped for edit', contactInfo);
     }).catch(function(err)
     {
         console.log('Error\n', err);
@@ -15,13 +17,13 @@ addressApp.controller('ContactInfoEditCtrl', ['$scope', '$routeParams', '$locati
     
     $scope.commitEdits = function()
     {
-        $scope.editedContactInfo.$save().then(function(savedContactInfo)
+        $scope.editedContactInfo.$update().then(function(savedContactInfo)
         {
-            console.log('ContactInfo saved', savedContactInfo);
+            console.log('ContactInfo edited', savedContactInfo);
             
             $scope.editing = false;
             
-            $location.path('/contactInfo/'+savedContactInfo.id); // redirect
+            $location.path('/person/'+savedContactInfo.person+'/info/'+savedContactInfo.id); // redirect
         }).catch(function(err)
         {
             console.log('Error\n', err);

@@ -40,6 +40,8 @@ module.exports.routes =
     // update shorter route
     'patch /api/contact/:id': 'ContactInfoController.update',
     'patch /api/info/:id': 'ContactInfoController.update',
+    'put /api/contact/:id': 'ContactInfoController.update',
+    'put /api/info/:id': 'ContactInfoController.update',
     
     // CATEGORY
     // 'get /api/category/:id': 'CategoryController.show',  // TODO

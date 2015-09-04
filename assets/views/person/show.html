@@ -24,7 +24,7 @@
       
       <label><h5>Contact Info:</h5></label>
       <tabset>
-        <tab ng-repeat="contact in person.info" active="contact.active" ng-init="contact.active = $index === 0">
+        <tab ng-repeat="contact in person.info" active="contact.active" ng-init="contact.active = (infoId == null && $index === 0) || contact.id === infoId">
           <tab-heading>
             {{contact.name}}
             <div class="shadow-cover"></div>
@@ -61,7 +61,7 @@
           
           <div class="info-controls">
             <a ng-click="deleteContactInfo(contact)" class="btn btn-danger btn-xs glyphicon glyphicon-trash" title="Delete"></a>
-            <a href="/person/{{person.id}}/info/{{contact.id}}" class="btn btn-default btn-xs glyphicon glyphicon-pencil" title="Edit"></a>
+            <a href="/info/{{contact.id}}/edit" class="btn btn-default btn-xs glyphicon glyphicon-pencil" title="Edit"></a>
           </div>
         </tab>
         <tab select="clearNew()">
